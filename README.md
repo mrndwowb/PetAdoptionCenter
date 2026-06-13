@@ -20,8 +20,13 @@ Features:
 4. can search and filter pet list
 
 
-interconnected class means: • Inheritance – A subclass extends a superclass. For example, Staff extends User, Adopter extends User. • Association – A class has a field of another class type. For example, an Order class has a Customer field. • Aggregation / Composition – A class contains a collection of another class. For example, a ShoppingCart contains a list of Product objects. • Dependency – A method of one class uses an object of another class as a parameter or local variable. For example, processPayment (Payment p).
+interconnected class means: 
+• Inheritance – A subclass extends a superclass. For example, Staff extends User, Adopter extends User. 
+• Association – A class has a field of another class type. For example, an Order class has a Customer field. 
+• Aggregation / Composition – A class contains a collection of another class. For example, a ShoppingCart contains a list of Product objects. 
+• Dependency – A method of one class uses an object of another class as a parameter or local variable. For example, processPayment (Payment p).
 
 PetAdoptionSystem/ ├── main/ │ └── Main.java # Main entry point, holds static AdoptionCenter object │ ├── model/ # ALL DATA MODEL CLASSES │ ├── User.java # Parent Superclass │ ├── Adopter.java # Child subclass 1 (extends User) │ ├── Staff.java # Child subclass 2 (extends User) │ ├── Pet.java # Pet entity class │ └── AdoptionApplication.java # Adoption application class │ ├── exception/ # Custom Exception Classes │ ├── InvalidInputException.java │ └── ApplicationProcessingException.java │ ├── gui/ # ALL SWING GUI WINDOWS │ ├── LoginWindow.java # Login interface │ ├── UserWindow.java # Adopter user panel │ ├── AdminWindow.java # Staff/Admin panel │ ├── PetTableModel.java # Format pet data for display │ └── ApplicationTableModel.java # Format application data │ └── (all compiled class files)
 Inheritance User (Parent) ├─ Adopter (Child) └─ Staff (Child)
-How to run: download all files, then run Main.Java Login page will shows up and can login with the credentials store in the adoptioncenterData.txt as adopter or staff/admin. If logout, will be back to the login page
+
+How to run: download all files. In the eclipse app, import all of these files into one java project. Run Main.Java, Login page will shows up and can login with the credentials store in the adoptioncenterData.txt as adopter or staff/admin. If logout, will be back to the login page
